@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "9ee1d50c-09f0-4fba-b8c7-5b0c3b8bb6af",
+		"name": "Heruko todos 預習練習- Oscar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "抓取所有資料",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://peaceful-oasis-00454.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"peaceful-oasis-00454",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆資料",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"我愛六角\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://peaceful-oasis-00454.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"peaceful-oasis-00454",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://peaceful-oasis-00454.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"peaceful-oasis-00454",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆資料",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://peaceful-oasis-00454.herokuapp.com/todos/b00d7713-f34b-4f50-8919-540c45f8ce97",
+					"protocol": "https",
+					"host": [
+						"peaceful-oasis-00454",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"b00d7713-f34b-4f50-8919-540c45f8ce97"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯一筆資料",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
